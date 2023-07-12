@@ -1,9 +1,10 @@
-num = [int(input()) for x in range(10)]
+"""Hello world """
+num = [int(input("")) for x in range(10)]
 
 num_mul = []
 Max = []
 
-def prime_numrical(x):
+def prime_count(x):
     n = 0
     for i in range(2, x):
         if (x%i == 0 and is_prime(i)):    
@@ -21,7 +22,7 @@ def is_prime(x):
         return True
     
 for i in range(10):
-    num_mul.append(prime_numrical(num[i]))
+    num_mul.append(prime_count(num[i]))
 
 max_num_mul = max(num_mul)
 
